@@ -121,6 +121,7 @@
             </constraints>
             <properties>
               <font name="Arial" size="14" style="1"/>
+              <icon value="icons8-administrator.png"/>
               <text value="Panel administracyjny"/>
             </properties>
           </component>

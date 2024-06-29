@@ -23,7 +23,7 @@ public class AdminPanel extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 SprzetPanel sprzetPanel=new SprzetPanel();
-                sprzetPanel.setVisible(true);
+                //sprzetPanel.setVisible(true);
             }
         });
         listaWypozyczenButton.addActionListener(new ActionListener() {
@@ -31,7 +31,7 @@ public class AdminPanel extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 WypozyczeniaPanel wypozyczeniaPanel=new WypozyczeniaPanel();
-                wypozyczeniaPanel.setVisible(true);
+                //wypozyczeniaPanel.setVisible(true);
             }
         });
         wyjscieButton.addActionListener(new ActionListener() {
@@ -45,14 +45,8 @@ public class AdminPanel extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 Logowanie logowanie=new Logowanie();
-                logowanie.setVisible(true);
+                //logowanie.setVisible(true);
             }
         });
-    }
-
-
-    //main do usuniecia
-    public static void main(String[] args) {
-        AdminPanel ap=new AdminPanel();
     }
 }

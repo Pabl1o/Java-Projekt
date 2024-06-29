@@ -37,7 +37,7 @@ public class SprzetEditPanel extends JFrame implements PobierzSprzet{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 SprzetPanel sprzetPanel=new SprzetPanel();
-                sprzetPanel.setVisible(true);
+                //sprzetPanel.setVisible(true);
             }
         });
         zapiszZmianyButton.addActionListener(new ActionListener() {

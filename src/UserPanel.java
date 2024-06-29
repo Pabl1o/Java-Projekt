@@ -16,7 +16,7 @@ public class UserPanel extends JFrame implements PobierzSprzet{
     private JLabel iloscLabel;
     private JLabel kosztLabel;
     private JLabel maxdayLabel;
-    private int width=600, height=400;
+    private int width=600, height=450;
     private int userid;
     private DefaultListModel<String> listModel=new DefaultListModel<>();
     private ArrayList<Integer> sprzetyids=new ArrayList<>();
@@ -45,6 +45,9 @@ public class UserPanel extends JFrame implements PobierzSprzet{
                     kosztLabel.setText("Koszt za dzień: "+koszty.get(index));
                     maxdayLabel.setText("Maksymalny czas wypożyczenia: "+maxdaystime.get(index));
                     rezerwujButton.setEnabled(true);
+                }
+                else{
+                    rezerwujButton.setEnabled(false);
                 }
             }
         });
@@ -97,14 +100,9 @@ public class UserPanel extends JFrame implements PobierzSprzet{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 Logowanie logowanie=new Logowanie();
-                logowanie.setVisible(true);
+                //logowanie.setVisible(true);
             }
         });
-    }
-
-
-    public static void main(String[] args) {
-        UserPanel userPanel=new UserPanel(2);
     }
 
     private void createUIComponents() {
@@ -136,6 +134,7 @@ public class UserPanel extends JFrame implements PobierzSprzet{
         }
     }
 
+    //dodawanie do bazy wypozyczonej pozycji
     private void addwypozyczenie(int idsprzet, int iduser, int ilosc, String dataod, String datado, int nowailosc){
         String sql="INSERT INTO wypozyczenia (sprzet_id, user_id, ilosc, dataod, datado) VALUES (?, ?, ?, ?, ?)";
         String sql2="UPDATE sprzet SET ilosc=? WHERE id="+idsprzet+"";
@@ -152,10 +151,10 @@ public class UserPanel extends JFrame implements PobierzSprzet{
             pstmt2.executeUpdate();
             JOptionPane.showMessageDialog(null,"Sprzet został wypożyczony.",
                     "Komunikat",JOptionPane.INFORMATION_MESSAGE);
-            //dodac wybor faktura czy paragon
+            //okno wyboru paragonu lub faktury
+            UserParFakt upf=new UserParFakt();
         } catch (SQLException e){
             e.printStackTrace();
         }
     }
-
 }

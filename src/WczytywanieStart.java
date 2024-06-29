@@ -27,16 +27,10 @@ public class WczytywanieStart extends JFrame{
             }catch(InterruptedException e){
                 e.printStackTrace();
             }
-            licznik=licznik+1;
+            licznik=licznik+4;
         }
         dispose();
         LogOrSign los=new LogOrSign();
-        los.setVisible(true);
+        //los.setVisible(true);
     }
-
-    //ten main jest do usuniecia
-    public static void main(String[] args) {
-        WczytywanieStart ws=new WczytywanieStart();
-    }
-
 }

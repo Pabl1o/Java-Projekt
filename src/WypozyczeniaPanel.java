@@ -62,7 +62,7 @@ public class WypozyczeniaPanel extends JFrame implements PobierzWypozyczenia{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 AdminPanel adminPanel=new AdminPanel();
-                adminPanel.setVisible(true);
+                //adminPanel.setVisible(true);
             }
         });
         exitButton.addActionListener(new ActionListener() {
@@ -111,8 +111,4 @@ public class WypozyczeniaPanel extends JFrame implements PobierzWypozyczenia{
         }
     }
 
-
-    public static void main(String[] args) {
-        WypozyczeniaPanel wp=new WypozyczeniaPanel();
-    }
 }

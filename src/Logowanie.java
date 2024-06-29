@@ -33,7 +33,7 @@ public class Logowanie extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 LogOrSign los=new LogOrSign();
-                los.setVisible(true);
+                //los.setVisible(true);
             }
         });
         zalogujButton.addActionListener(new ActionListener() {
@@ -50,20 +50,19 @@ public class Logowanie extends JFrame{
                         if(isadmin(login)){
                             dispose();
                             AdminPanel adminPanel=new AdminPanel();
-                            adminPanel.setVisible(true);
+                            //adminPanel.setVisible(true);
                         }
                         else{
                             int p=takeuserid(login);
                             dispose();
                             UserPanel userPanel=new UserPanel(p);
-                            userPanel.setVisible(true);
+                            //userPanel.setVisible(true);
                         }
                     }
                 }
             }
         });
     }
-
 
 
     private int takeuserid(String login){
@@ -113,6 +112,8 @@ public class Logowanie extends JFrame{
         }
     }
 
+
+    //sprawdzanie czy konto jest kontem admina czy zwyklego uzytkownika
     private boolean isadmin(String login){
         boolean wynik=false;
         String sql="SELECT isadmin FROM users WHERE login='"+login+"'";
@@ -131,11 +132,5 @@ public class Logowanie extends JFrame{
         finally {
             return wynik;
         }
-    }
-
-
-    //ten main przeznaczony jest do usuniecia
-    public static void main(String[] args) {
-        Logowanie logowanie=new Logowanie();
     }
 }

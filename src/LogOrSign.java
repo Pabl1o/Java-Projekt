@@ -39,9 +39,4 @@ public class LogOrSign extends JFrame{
             }
         });
     }
-
-    //do usuniecia jest ten main sluzy do testow tylko
-    public static void main(String[] args) {
-        LogOrSign los=new LogOrSign();
-    }
 }

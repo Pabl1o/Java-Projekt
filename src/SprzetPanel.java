@@ -34,7 +34,7 @@ public class SprzetPanel extends JFrame implements PobierzSprzet{
                     case "Dodaj":
                         dispose();
                         SprzedAddPanel sap=new SprzedAddPanel();
-                        sap.setVisible(true);
+                        //sap.setVisible(true);
                         break;
                     case "Edytuj":
                         if(sprzetTable.getSelectedRow()==-1){
@@ -46,7 +46,7 @@ public class SprzetPanel extends JFrame implements PobierzSprzet{
                             int id=Integer.parseInt(sid);
                             dispose();
                             SprzetEditPanel sep=new SprzetEditPanel(id);
-                            sep.setVisible(true);
+                            //sep.setVisible(true);
                         }
                         break;
                     case "Usuń":
@@ -80,7 +80,7 @@ public class SprzetPanel extends JFrame implements PobierzSprzet{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 AdminPanel ap=new AdminPanel();
-                ap.setVisible(true);
+                //ap.setVisible(true);
             }
         });
     }
@@ -127,12 +127,6 @@ public class SprzetPanel extends JFrame implements PobierzSprzet{
         } catch (SQLException e){
             e.printStackTrace();
         }
-    }
-
-
-    //main do usuniecia
-    public static void main(String[] args) {
-        SprzetPanel sp=new SprzetPanel();
     }
 
 }

@@ -65,10 +65,11 @@ public class SprzedAddPanel extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 SprzetPanel sp=new SprzetPanel();
-                sp.setVisible(true);
+                //sp.setVisible(true);
             }
         });
     }
+
 
     //dodawanie sprzetu do bazy danych
     private void dodajSprzetdoDB(String rodzaj, String nazwa, int ilosc, int koszt, int maxdniw){
@@ -91,12 +92,5 @@ public class SprzedAddPanel extends JFrame{
         } catch (SQLException e){
             e.printStackTrace();
         }
-    }
-
-
-
-    //do kasacji
-    public static void main(String[] args) {
-        SprzedAddPanel sap=new SprzedAddPanel();
     }
 }

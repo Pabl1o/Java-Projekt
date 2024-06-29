@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UserPanel">
-  <grid id="27dc6" binding="UserPanel" layout-manager="GridLayoutManager" row-count="8" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="UserPanel" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="536" height="428"/>
+      <xy x="20" y="20" width="536" height="495"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-8603794"/>
+    </properties>
     <border type="none"/>
     <children>
-      <grid id="1f0fa" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
-        <constraints>
-          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
-        <border type="none"/>
-        <children/>
-      </grid>
       <grid id="5741e" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="2f67e" class="javax.swing.JLabel">
@@ -60,7 +55,9 @@
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="38a80" class="javax.swing.JLabel">
@@ -69,6 +66,8 @@
             </constraints>
             <properties>
               <font name="Arial" size="14" style="1"/>
+              <foreground color="-1760957"/>
+              <icon value="icons8-user.png"/>
               <text value="Panel użytkownika"/>
             </properties>
           </component>
@@ -89,7 +88,9 @@
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="42b64" class="javax.swing.JButton" binding="wyjscieButton">
@@ -117,7 +118,9 @@
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <grid id="4163" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -125,7 +128,9 @@
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-3686600"/>
+            </properties>
             <border type="none"/>
             <children>
               <scrollpane id="c1256">
@@ -154,7 +159,9 @@
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-7174078"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="8167f" class="javax.swing.JLabel" binding="nazwaLabel">
@@ -163,6 +170,7 @@
                 </constraints>
                 <properties>
                   <font name="Arial" size="12" style="0"/>
+                  <foreground color="-6555659"/>
                   <text value="Nazwa:"/>
                 </properties>
               </component>
@@ -172,6 +180,7 @@
                 </constraints>
                 <properties>
                   <font name="Arial" size="12" style="0"/>
+                  <foreground color="-6555659"/>
                   <text value="Ilość:"/>
                 </properties>
               </component>
@@ -181,6 +190,7 @@
                 </constraints>
                 <properties>
                   <font name="Arial" size="12" style="0"/>
+                  <foreground color="-6555659"/>
                   <text value="Koszt za dzień:"/>
                 </properties>
               </component>
@@ -190,6 +200,7 @@
                 </constraints>
                 <properties>
                   <font name="Arial" size="12" style="0"/>
+                  <foreground color="-6555659"/>
                   <text value="Maksymalny czas wypożyczenia:"/>
                 </properties>
               </component>
@@ -212,12 +223,14 @@
           </hspacer>
         </children>
       </grid>
-      <grid id="a5044" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="a5044" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="557e2" class="javax.swing.JLabel">
@@ -226,6 +239,7 @@
             </constraints>
             <properties>
               <font name="Arial" size="12" style="0"/>
+              <foreground color="-16711423"/>
               <text value="Wybór sprzętu do wypożyczenia"/>
             </properties>
           </component>
@@ -241,10 +255,11 @@
           </hspacer>
           <component id="6a3f4" class="javax.swing.JLabel">
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <font name="Arial" size="12" style="0"/>
+              <foreground color="-16711423"/>
               <text value="Wybierz z listy i naciśnij rezerwuj"/>
             </properties>
           </component>
@@ -258,6 +273,16 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
+          <component id="83bf5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Arial" size="12" style="0"/>
+              <foreground color="-16711423"/>
+              <text value="Następnie w nowootwartym oknie wybierz paragon lub fakture."/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="7ba70" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -265,7 +290,9 @@
         <constraints>
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <vspacer id="87691">
@@ -280,7 +307,9 @@
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-8603794"/>
+        </properties>
         <border type="none"/>
         <children>
           <vspacer id="612bf">

@@ -13,7 +13,7 @@ public class Rejestracja extends JFrame{
     private JPasswordField confirmpassField;
     private JTextField imieField;
     private JTextField nazwiskoField;
-    private int width=400, height=300;
+    private int width=400, height=350;
     private String login, haslo, confirmhaslo, imie, nazwisko;
 
     public Rejestracja(){
@@ -34,7 +34,7 @@ public class Rejestracja extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 LogOrSign los=new LogOrSign();
-                los.setVisible(true);
+                //los.setVisible(true);
             }
         });
         zarejestrujButton.addActionListener(new ActionListener() {
@@ -108,9 +108,4 @@ public class Rejestracja extends JFrame{
         }
     }
 
-
-    //ten main przeznaczony jest do usuniecia
-    public static void main(String[] args) {
-        Rejestracja rej=new Rejestracja();
-    }
 }

@@ -142,6 +142,7 @@
             </constraints>
             <properties>
               <font name="Arial" size="14" style="0"/>
+              <icon value="icons8-login.png"/>
               <text value="Panel logowania do systemu"/>
             </properties>
           </component>
