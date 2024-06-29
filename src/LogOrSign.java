@@ -7,10 +7,10 @@ public class LogOrSign extends JFrame{
     private JButton wyjscieButton;
     private JButton zarejestrujButton;
     private JButton zalogujButton;
-    private int width=400, height=300;
+    private int width=380, height=300;
 
     public LogOrSign(){
-        super("Wybór opcji");
+        super("Panel wyboru");
         this.setContentPane(this.LoSpanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(width,height);

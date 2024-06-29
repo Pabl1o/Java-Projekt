@@ -47,18 +47,38 @@ public class Logowanie extends JFrame{
                 }
                 else{
                     if(loguj(login,haslo)){
-                        System.out.println("Poprawnie zalogowano dispose i otwarcie panelu po logowaniu");
-                        //zrobic metode isadmin i otwierac panel admina lub panel zwyklego uzytkownika
                         if(isadmin(login)){
-                            System.out.println("to admin. otwarcie panelu dla administratora");
+                            dispose();
+                            AdminPanel adminPanel=new AdminPanel();
+                            adminPanel.setVisible(true);
                         }
                         else{
-                            System.out.println("otwarcie panelu dla zwyklego uzytkownika");
+                            int p=takeuserid(login);
+                            dispose();
+                            UserPanel userPanel=new UserPanel(p);
+                            userPanel.setVisible(true);
                         }
                     }
                 }
             }
         });
+    }
+
+
+
+    private int takeuserid(String login){
+        int userid=0;
+        String sql="SELECT id FROM users WHERE login='"+login+"'";
+        try (Connection conn=DBConnection.getConnection();
+             Statement stmt=conn.createStatement();
+             ResultSet rs=stmt.executeQuery(sql)){
+            if(rs.next()){
+                userid=rs.getInt("id");
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+        return userid;
     }
 
 

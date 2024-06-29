@@ -12,7 +12,7 @@ public class SprzetPanel extends JFrame implements PobierzSprzet{
     private JButton okButton;
     private JButton wyjscieButton;
     private JButton powrotButton;
-    private int width=650, height=500;
+    private int width=700, height=500;
     private String[] kolumny={"ID:","Rodzaj:","Nazwa:","Ilość:","Koszt:","Maksymalny czas:"};
     private DefaultTableModel defaultTableModel=new DefaultTableModel(null,kolumny);
 
